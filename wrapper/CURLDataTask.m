@@ -87,7 +87,7 @@ static NSString *kAcceptEncodingHeaderName = @"Accept-Encoding";
 
     struct curl_slist *host = NULL;
     if (self.ipToOverrideWith) {
-        NSString *hostString = [NSString stringWithFormat:@"%@:%ld:%@", self.request.URL.host, self.portToOverrideWith, self.ipToOverrideWith];
+        NSString *hostString = [NSString stringWithFormat:@"%@:%ld:%@", self.request.URL.host, (long)self.portToOverrideWith, self.ipToOverrideWith];
 
         host = curl_slist_append(NULL, [hostString UTF8String]);
         curl_easy_setopt(handle, CURLOPT_RESOLVE, host);
