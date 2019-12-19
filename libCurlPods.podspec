@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'libCurlPods'
-  spec.version      = '7.60.2'
+  spec.version      = '7.60.3'
   spec.license      = { :type => 'MIT' }
   spec.homepage     = 'https://github.com/KosyanMedia/libCurlPods.git'
   spec.authors      = { 'LorienMan' => 'https://github.com/LorienMan' }
