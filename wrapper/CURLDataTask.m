@@ -104,6 +104,7 @@ static NSString *kAcceptEncodingHeaderName = @"Accept-Encoding";
         }
     }];
 
+    headers = curl_slist_append(headers, [@"Expect:" UTF8String]);
     curl_easy_setopt(handle, CURLOPT_HTTPHEADER, headers);
 
     // Setup - response handling callback
